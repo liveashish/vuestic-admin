@@ -39,7 +39,7 @@ export default {
         }
       ];
 
-      wt.setSteps(steps);
+      wt.setSteps(steps, {strategy:'fixed'});
       wt.start();
 
 
