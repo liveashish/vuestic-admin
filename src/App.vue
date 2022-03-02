@@ -29,7 +29,7 @@ export default {
 
     this.waitForElm(element).then(() => {
 
-      const wt = new WebTour();
+      const wt = new WebTour({strategy:'fixed'});
       const steps = [
         {
           element: element,            //target element (if not defined then the popover will act like a modal at the center of the screen)
@@ -39,7 +39,7 @@ export default {
         }
       ];
 
-      wt.setSteps(steps, {strategy:'fixed'});
+      wt.setSteps(steps);
       wt.start();
 
 
