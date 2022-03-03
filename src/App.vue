@@ -15,7 +15,7 @@ export default {
     // })
 
     const script = document.createElement('script');
-    script.setAttribute('src', 'http://localhost:8080/js/app.js');
+    script.setAttribute('src', 'https://hey-user-embed.netlify.app/js/app.js');
     script.setAttribute('type', 'text/javascript');
     document.getElementsByTagName('head')[0].appendChild(script);
     // Add a tag
